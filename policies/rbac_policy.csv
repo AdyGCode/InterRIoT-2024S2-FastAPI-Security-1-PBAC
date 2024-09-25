@@ -1,0 +1,20 @@
+p, anonymous, /, GET
+p, anonymous, /about, GET
+p, anonymous, /static/*, GET
+
+p, anonymous, /docs, GET
+p, anonymous, /openapi.json, GET
+
+p, *, /, GET
+
+p, alice, /api/v1/, GET
+p, alice, /api/v1/dataset1/*, GET
+p, alice, /api/v1/dataset1/resource1, POST
+
+p, bob, /api/v1/dataset2/resource1, *
+p, bob, /api/v1/dataset2/resource2, GET
+p, bob, /api/v1/dataset2/folder1/*, POST
+
+p, dataset1_admin, /api/v1/dataset1/*, *
+
+g, cathy, dataset1_admin

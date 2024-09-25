@@ -1,30 +1,69 @@
 {% extends "base.html" %}
 
-{% block title %}Home{% endblock title %}
+{% block title %}Home | XXX{% endblock title %}
 
 {% block page_title %}
 <h2 class="mx-4 text-3xl text-zinc-700 text-left font-medium uppercase title-font">
     <i class="fa-solid fa-home text-zinc-500"></i>
-    Home Page
+    Fast API and Access Control
 </h2>
 {% endblock %}
 
 {% block main %}
 <section class="container mx-auto border grow h-full shadow-md p-4 pb-8 rounded space-y-2">
-    <h2 class="text-xl text-zinc-50 bg-zinc-600 p-4 pb-6 mb-6 -mx-4 -mt-4 rounded-t">
-        Section Heading
+    <h2 class="text-2xl text-zinc-50 bg-zinc-600 p-4 pb-6 mb-6 -mx-4 -mt-4 rounded-t">
+        Attribute/Policy Based Access Control
     </h2>
 
-    <p>MAIN CONTENT</p>
+    <h3 class="text-xl text-zinc-500">To Do Checklist:</h3>
+    <div class="text-zinc-700 grid grid-cols-6 md:grid-cols-12 items-start gap-y-8">
+        <i class="text-2xl text-green-700 fa-regular fa-check-square min-w-6 col-span-1"></i>
 
-    <ul class="list-disc list-inside">
-        <li>List Item</li>
-        <li>List Item</li>
-        <li>List Item</li>
-        <li>List Item</li>
-        <li>List Item</li>
-    </ul>
+        <div class="col-span-5 md:col-span-11 space-y-1">
+            <h4 class="font-bold">Step 0:</h4>
 
+            <p>
+                Each time you complete a stage, before commit, you should update the square/box icon from
+                <code>fa-square</code> and from red <i class="text-red-700 fa-regular fa-square"></i> to
+                <code>fa-check-square</code> and green <i class="text-green-700 fa-regular fa-check-square"></i>.
+            </p>
+        </div>
+
+        <i class="text-2xl text-red-700 fa-regular fa-square min-w-6 col-span-1 "></i>
+        <div class="col-span-5 md:col-span-11 space-y-1">
+            <h4 class="font-bold">Step 1:</h4>
+            <p>
+                Update the title to use your initials in the form `PAGE | XXX`.
+                This page will be `Home | XXX` and About will be `About | XXX`.
+            </p>
+            <p>Update the About page so the heading is "About this Security Demo 1 App"</p>
+        </div>
+
+        <i class="text-2xl text-red-700 fa-regular fa-square min-w-6 col-span-1"></i>
+        <div class="col-span-5 md:col-span-11">
+            <h4 class="font-bold">Step 2:</h4>
+            <p>...</p>
+        </div>
+
+        <i class="text-2xl text-red-700 fa-regular fa-square min-w-6 col-span-1"></i>
+        <div class="col-span-5 md:col-span-11">
+            <h4 class="font-bold">Step 3:</h4>
+            <p>...</p>
+        </div>
+
+        <i class="text-2xl text-red-700 fa-regular fa-square min-w-6 col-span-1"></i>
+        <div class="col-span-5 md:col-span-11">
+            <h4 class="font-bold">Step 4:</h4>
+            <p>...</p>
+        </div>
+
+        <i class="text-2xl text-red-700 fa-regular fa-square min-w-6 col-span-1"></i>
+        <div class="col-span-5 md:col-span-11">
+            <h4 class="font-bold">Step 5:</h4>
+            <p>...</p>
+        </div>
+
+    </div>
 
 </section>
 {% endblock %}

@@ -3,5 +3,5 @@
   <component name="Black">
     <option name="sdkName" value="Python 3.12 (xxx-fastapi-templating)" />
   </component>
-  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.10 (InterRIoT-2024S2-fastapi-templating)" project-jdk-type="Python SDK" />
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.10 (InterRIoT-2024S2-fastapi-security-1)" project-jdk-type="Python SDK" />
 </project>
